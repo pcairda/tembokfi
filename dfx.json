@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "tembok-finance-backend": {
+      "main": "src/tembok-finance-backend/main.mo",
+      "type": "motoko"
+    },
+    "tembok-finance-frontend": {
+      "dependencies": [
+        "tembok-finance-backend"
+      ],
+      "source": [
+        "src/tembok-finance-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tembok-finance-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
